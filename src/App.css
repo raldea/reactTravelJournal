@@ -1,0 +1,160 @@
+.App {
+  text-align: center;
+  max-width: 550px;
+  margin: 50px auto;
+  background: white;
+  width: 100%;
+}
+
+.header {
+  padding: 15.5px 20px;
+  background: #F55A5A;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header:before {
+  content: '';
+  display: inline-block;
+  background-image: url('../src/assets/images/globe.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 7px;
+}
+
+.main-content {
+  padding: 45px 40px;
+}
+
+.image-wrapper-inner {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px
+}
+
+.travel-content {
+  display: flex;
+}
+
+.image-wrapper {
+  width: 100%;
+  max-width: 125px;
+  height: 168px;
+}
+
+.content-wrapper {
+  flex: 1;
+  text-align: left;
+  padding-left: 19px;
+  margin-top: 19px;
+}
+
+.content-wrapper .location {
+  display: flex;
+  margin-bottom: 7px;
+}
+
+.location .country {
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.location .country:before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 11px;
+  background-image: url('../src/assets/images/pin-point.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 4px;
+  background-position: center;
+}
+
+.google-maps {
+  margin-left: 12px;
+  font-size: 10px;
+  color: #918E9B;
+}
+
+.google-maps a {
+  color: #918E9B;
+}
+
+.content-wrapper h3 {
+  font-weight: 700;
+  font-size: 25px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.content-wrapper .date {
+  font-size: 10px;
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+
+.content-wrapper .description {
+  font-weight: 400;
+  line-height: 15px;
+  font-size: 10px;
+}
+
+.travel-list .travel-content {
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #F5F5F5;
+}
+
+.travel-list .travel-content:nth-last-of-type(1) {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
